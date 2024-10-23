@@ -1,0 +1,44 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.header {
+  height: 95vh;
+  background-image: url("../../img/real/family2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: url("../../img/real/family2.jpg");
+  }
+
+  @include mixins.respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  &__logo-box {
+    font-family: "Playwrite ID", cursive;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    line-height: 3.7;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__brand {
+    font-size: 3rem;
+    color: variables.$color-primary;
+  }
+
+  &__text-box {
+    text-align: right;
+  }
+}
