@@ -42,6 +42,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
+  background-color: #fbf4ec;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -134,23 +135,13 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Playwrite ID", cursive;
+  font-family: "Fraunces", cursive;
   font-size: 3.5rem;
-  line-height: 2.7em;
+  line-height: 1.7em;
   text-transform: uppercase;
-  font-weight: 700;
   display: inline-block;
-  letter-spacing: 2px;
   transition: all 0.2s;
-  color: #55c57a;
-}
-@supports (-webkit-background-clip: text) or (background-clip: text) {
-  .heading-secondary {
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+  color: #53332e;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
@@ -211,7 +202,6 @@ body {
 }
 
 .section-about {
-  background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
 }
@@ -223,7 +213,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(234, 229, 219, 0.8), rgba(114, 102, 70, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -260,7 +250,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #d9bca3, #89533a);
 }
 @media only screen and (max-width: 56.25em) {
   .section-book {
@@ -361,15 +351,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #726646;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #726646;
   padding: 3px;
   transition: all 0.2s;
 }
 .btn-text:hover {
-  background-color: #55c57a;
+  background-color: #726646;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -432,7 +422,7 @@ body {
   }
 }
 .composition__photo:hover {
-  outline: 1.5rem solid #55c57a;
+  outline: 1.5rem solid #726646;
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
@@ -826,7 +816,7 @@ body {
   margin-top: 10em;
   display: grid;
   /*grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 5vw);*/
+    grid-template-rows: repeat(7, 5vw);*/
   grid-template: repeat(7, 8vw)/repeat(8, 1fr);
   grid-gap: 1.5rem;
   padding: 1.5rem;
@@ -913,20 +903,25 @@ body {
   }
 }
 .header__logo-box {
-  font-family: "Playwrite ID", cursive;
-  padding: 0 1rem;
+  line-height: 1.7;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  line-height: 3.7;
 }
 .header__logo {
   height: 3.5rem;
 }
 .header__brand {
-  font-size: 3rem;
-  color: #55c57a;
+  font-family: "Fraunces", cursive;
+  font-size: 4rem;
+  color: #53332e;
+}
+.header__subbrand {
+  font-family: "Montserrat", cursive;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+  color: #89533a;
 }
 .header__text-box {
   text-align: right;
@@ -1111,6 +1106,11 @@ body {
     right: 3.5rem;
   }
 }
+.navigation__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
 .navigation__list {
   display: flex;
   list-style: none;
@@ -1124,7 +1124,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #55c57a;
+  color: #53332e;
   text-decoration: none;
   text-transform: uppercase;
 }

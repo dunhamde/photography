@@ -20,13 +20,10 @@
   }
 
   &__logo-box {
-    font-family: "Playwrite ID", cursive;
-    padding: 0 1rem;
+    line-height: 1.7;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    line-height: 3.7;
   }
 
   &__logo {
@@ -34,8 +31,17 @@
   }
 
   &__brand {
-    font-size: 3rem;
-    color: variables.$color-primary;
+    font-family: "Fraunces", cursive;
+    font-size: 4rem;
+    color: variables.$color-brand;
+  }
+
+  &__subbrand {
+    font-family: "Montserrat", cursive;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+    color: variables.$color-wood;
   }
 
   &__text-box {

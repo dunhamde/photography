@@ -47,26 +47,24 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Playwrite ID", cursive;
+  font-family: "Fraunces", cursive;
   font-size: 3.5rem;
-  line-height: 2.7em;
+  line-height: 1.7em;
   text-transform: uppercase;
-  font-weight: 700;
   display: inline-block;
-  letter-spacing: 2px;
   transition: all 0.2s;
-  color: variables.$color-primary;
+  color: variables.$color-brand;
 
-  @supports (-webkit-background-clip: text) or (background-clip: text) {
-    background-image: linear-gradient(
-      to right,
-      variables.$color-primary-light,
-      variables.$color-primary-dark
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
+  // @supports (-webkit-background-clip: text) or (background-clip: text) {
+  //   background-image: linear-gradient(
+  //     to right,
+  //     variables.$color-primary-light,
+  //     variables.$color-primary-dark
+  //   );
+  //   -webkit-background-clip: text;
+  //   background-clip: text;
+  //   color: transparent;
+  // }
 
   @include mixins.respond(tab-port) {
     font-size: 3rem;

@@ -54,23 +54,15 @@
   }
 
   &__nav {
-    // height: 100vh;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // z-index: 1500;
-
-    // opacity: 0;
-    // width: 100%;
-    // transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   &__list {
-    // @include center-horizontal-vertical;
     display: flex;
     list-style: none;
     text-align: center;
-    // width: 100%;
   }
 
   &__item {
@@ -84,17 +76,9 @@
       font-size: 1.5rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: variables.$color-primary;
+      color: variables.$color-brand;
       text-decoration: none;
       text-transform: uppercase;
-      //   background-image: linear-gradient(
-      //     120deg,
-      //     transparent 0%,
-      //     transparent 50%,
-      //     $color-white 50%
-      //   );
-      //   background-size: 220%;
-      //   transition: all 0.4s;
 
       span {
         display: inline-block;
