@@ -1,0 +1,5 @@
+# Ignore artifacts:
+css
+img
+node_modules
+package-lock.json

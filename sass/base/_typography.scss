@@ -14,7 +14,7 @@ body {
 .heading-primary {
   color: variables.$color-white;
   margin-right: 2em;
-  
+
   &--main {
     display: block;
     font-family: "Playwrite ID", cursive;
@@ -75,7 +75,6 @@ body {
   @include mixins.respond(phone) {
     font-size: 2.5rem;
   }
-
 }
 
 .heading-tertiary {
