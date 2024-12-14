@@ -54,7 +54,7 @@
   padding: 15rem 0;
   background-image: linear-gradient(
     to right bottom,
-    variables.$color-gradient-start,
+    variables.$color-gradient-start 15%,
     variables.$color-gradient-end
   );
 
