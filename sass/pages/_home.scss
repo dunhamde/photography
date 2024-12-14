@@ -14,8 +14,8 @@
   padding: 20rem 0;
   background-image: linear-gradient(
       to right bottom,
-      rgba(variables.$color-background, 0.8),
-      rgba(variables.$color-dark-brown, 0.8)
+      variables.$color-gradient-start 15%,
+      variables.$color-gradient-end
     ),
     url("../img/nat-4.jpg");
   background-size: cover;
