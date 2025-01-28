@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-detail {
+  border-left: 2px solid variables.$color-gradient-start;
+  border-right: 2px solid variables.$color-gradient-start;
+  text-align: center;
+  padding: 8px 0;
+  ul {
+    list-style: none;
+    margin: 24px 0;
+  }
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: variables.$color-brand;
+}
+.pricing-image-1 {
+  background-image: url("../img/real/image4.jpg");
+  background-size: cover;
+  height: 45vh;
+  background-position: center;
+}
+.pricing-image-2 {
+  background-image: url("../img/real/image12.jpg");
+  background-size: cover;
+  height: 45vh;
+  background-position: center;
+}
+.pricing-image-3 {
+  background-image: url("../img/real/image13.jpg");
+  background-size: cover;
+  height: 45vh;
+  background-position: center;
+}
