@@ -21,42 +21,6 @@
     &--front {
       background-color: variables.$color-white;
     }
-
-    &--back {
-      transform: rotateY(180deg);
-
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          variables.$color-secondary-light,
-          variables.$color-secondary-dark
-        );
-      }
-
-      &-2 {
-        background-image: linear-gradient(
-          to right bottom,
-          variables.$color-primary-light,
-          variables.$color-primary-dark
-        );
-      }
-
-      &-3 {
-        background-image: linear-gradient(
-          to right bottom,
-          variables.$color-tertiary-light,
-          variables.$color-tertiary-dark
-        );
-      }
-    }
-  }
-
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-
-  &:hover &__side--back {
-    transform: rotateY(0deg);
   }
 
   // FRONT SIDE STYLING
