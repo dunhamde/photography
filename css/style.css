@@ -332,6 +332,13 @@ body {
 .btn--green::after {
   background-color: #55c57a;
 }
+.btn--brown {
+  background-color: #53332e;
+  color: #fff;
+}
+.btn--brown::after {
+  background-color: #53332e;
+}
 .btn::after {
   content: "";
   display: inline-block;
@@ -763,7 +770,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #55c57a;
+  border: 5px solid #53332e;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -780,7 +787,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #55c57a;
+  background-color: #53332e;
   opacity: 0;
   transition: opacity 0.2s;
 }
