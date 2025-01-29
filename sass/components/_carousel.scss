@@ -1,0 +1,49 @@
+.carousel {
+  display: flex;
+
+  &__prev {
+    position: absolute;
+    left: 0;
+    align-self: center;
+  }
+  &__next {
+    position: absolute;
+    right: 0;
+    align-self: center;
+  }
+
+  &__items {
+    display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  &__items::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__box {
+    scroll-snap-align: center;
+    height: 700px;
+    min-width: 500px;
+    flex: 1;
+  }
+
+  &__box:first-child {
+    background-color: green;
+  }
+  &__box:nth-child(2) {
+    background-color: red;
+  }
+  &__box:nth-child(3) {
+    background-color: yellow;
+  }
+  &__box:nth-child(4) {
+    background-color: turquoise;
+  }
+  &__box:nth-child(5) {
+    background-color: brown;
+  }
+}

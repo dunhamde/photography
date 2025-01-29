@@ -15,7 +15,6 @@
     <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-
     <title>Fotochic Photography &copy;</title>
   </head>
 
@@ -49,6 +48,18 @@
     </header>
 
     <main>
+      <section class="carousel">
+        <button class="carousel__prev" id="prev">Prev</button>
+        <div class="carousel__items" id="items">
+          <div class="carousel__box"></div>
+          <div class="carousel__box"></div>
+          <div class="carousel__box"></div>
+          <div class="carousel__box"></div>
+          <div class="carousel__box"></div>
+        </div>
+        <button class="carousel__next" id="next">Next</button>
+      </section>
+
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Recent work</h2>
@@ -156,226 +167,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img
-            src="img/real/image0.jpg"
-            alt="Gallery image 1"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img
-            src="img/real/image1.jpg"
-            alt="Gallery image 2"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img
-            src="img/real/image10.jpg"
-            alt="Gallery image 3"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img
-            src="img/real/image11.jpg"
-            alt="Gallery image 4"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img
-            src="img/real/image12.jpg"
-            alt="Gallery image 5"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img
-            src="img/real/image13.jpg"
-            alt="Gallery image 6"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--7">
-          <img
-            src="img/real/image14.jpg"
-            alt="Gallery image 7"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--8">
-          <img
-            src="img/real/image15.jpg"
-            alt="Gallery image 8"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--9">
-          <img
-            src="img/real/image16.jpg"
-            alt="Gallery image 9"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--10">
-          <img
-            src="img/real/image2.jpg"
-            alt="Gallery image 10"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--11">
-          <img
-            src="img/real/image3.jpg"
-            alt="Gallery image 11"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--12">
-          <img
-            src="img/real/image4.jpg"
-            alt="Gallery image 12"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--13">
-          <img
-            src="img/real/image5.jpg"
-            alt="Gallery image 13"
-            class="gallery__img"
-          />
-        </figure>
-        <figure class="gallery__item gallery__item--14">
-          <img
-            src="img/real/image8.jpg"
-            alt="Gallery image 14"
-            class="gallery__img"
-          />
-        </figure>
-      </section>
-      <section class="section-price-list" id="section-price-list">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Price list</h2>
-        </div>
-        <div class="row">
-          <div class="pricing">
-            <div class="pricing-detail col-1-of-3">
-              <h3>30 minute</h3>
-              <ul>
-                <li>25 edited images</li>
-                <li>Online gallery</li>
-                <li>Up to 5 people*</li>
-              </ul>
-              <h3>$158</h3>
-              <!-- <img
-                src="img/real/image4.jpg"
-                alt="Gallery image 12"
-                class="gallery__img"
-              /> -->
-            </div>
-            <div class="pricing-detail col-1-of-3">
-              <h3>40 minute</h3>
-              <ul>
-                <li>30 edited images</li>
-                <li>Online gallery</li>
-                <li>Up to 7 people*</li>
-              </ul>
-              <h3>$188</h3>
-            </div>
-            <div class="pricing-detail col-1-of-3">
-              <h3>60 minute</h3>
-              <ul>
-                <li>35 edited images</li>
-                <li>Online gallery</li>
-                <li>Up to 9 people*</li>
-              </ul>
-              <h3>$270</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="pricing">
-            <div class="pricing-image-1 col-1-of-3">test</div>
-            <div class="pricing-image-2 col-1-of-3">test</div>
-            <div class="pricing-image-3 col-1-of-3">test</div>
-          </div>
-        </div>
-        <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--brown">View all pricing</a>
-        </div>
-      </section>
-      <section class="section-stories">
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/jj-landscape.mp4" type="video/mp4" />
-            <source src="img/video.webm" type="video/webm" />
-            Your browser is not supported!
-          </video>
-        </div>
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Testimonials</h2>
-        </div>
-        <div class="row">
-          <div class="story">
-            <figure class="story__shape">
-              <img
-                src="img/real/image18.jpg"
-                alt="Person on a tour"
-                class="story__image"
-              />
-              <figcaption class="story__caption">Mary Smith</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                I had the best week ever with my family
-              </h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veritatis quae, vel culpa itaque fugiat voluptate laboriosam id
-                aut cupiditate aliquam quo provident ipsam, cumque omnis, dolor
-                fuga consequatur necessitatibus temporibus?Lorem ipsum, dolor
-                sit amet consectetur adipisicing elit. Veritatis quae, vel culpa
-                itaque fugiat voluptate laboriosam id aut cupiditate aliquam quo
-                provident ipsam, cumque omnis, dolor fuga consequatur
-                necessitatibus temporibus?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="story">
-            <figure class="story__shape">
-              <img
-                src="img/real/image26.jpg"
-                alt="Person on a tour"
-                class="story__image"
-              />
-              <figcaption class="story__caption">Jack Wilson</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                Wow! My life is completely different now
-              </h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veritatis quae, vel culpa itaque fugiat voluptate laboriosam id
-                aut cupiditate aliquam quo provident ipsam, cumque omnis, dolor
-                fuga consequatur necessitatibus temporibus?Lorem ipsum, dolor
-                sit amet consectetur adipisicing elit. Veritatis quae, vel culpa
-                itaque fugiat voluptate laboriosam id aut cupiditate aliquam quo
-                provident ipsam, cumque omnis, dolor fuga consequatur
-                necessitatibus temporibus?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
-        </div>
-      </section>
+
       <section class="section-book">
         <div class="row">
           <div class="book">
@@ -492,3 +284,4 @@
     </footer>
   </body>
 </html>
+<script src="script.js"></script>
