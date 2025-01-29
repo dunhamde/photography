@@ -36,7 +36,7 @@ body {
   &--sub {
     display: block;
     font-size: 2rem;
-    font-weight: 700;
+    // font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
 
@@ -47,9 +47,13 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Fraunces", cursive;
+  font-family:
+    Playfair Display,
+    sans-serif;
   font-size: 3.5rem;
   line-height: 1.7em;
+  font-weight: 400;
+  letter-spacing: 3.3px;
   text-transform: uppercase;
   display: inline-block;
   transition: all 0.2s;
@@ -77,7 +81,7 @@ body {
 
 .heading-tertiary {
   font-size: variables.$default-font-size;
-  font-weight: 700;
+  // font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -87,4 +91,10 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.description {
+  font-size: 1.5em;
+  font-family: Rosarivo, sans-serif;
+  color: variables.$color-black;
 }

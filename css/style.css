@@ -41,7 +41,6 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
   background-color: #fbf4ec;
 }
 @media only screen and (max-width: 56.25em) {
@@ -124,7 +123,6 @@ body {
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
-  font-weight: 700;
   letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
 }
@@ -135,9 +133,11 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Fraunces", cursive;
+  font-family: Playfair Display, sans-serif;
   font-size: 3.5rem;
   line-height: 1.7em;
+  font-weight: 400;
+  letter-spacing: 3.3px;
   text-transform: uppercase;
   display: inline-block;
   transition: all 0.2s;
@@ -156,7 +156,6 @@ body {
 
 .heading-tertiary {
   font-size: 1.6rem;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -165,6 +164,12 @@ body {
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.description {
+  font-size: 1.5em;
+  font-family: Rosarivo, sans-serif;
+  color: #000;
 }
 
 .u-center-text {
@@ -737,7 +742,6 @@ body {
 }
 .form__label {
   font-size: 1.2rem;
-  font-weight: 700;
   margin-left: 2rem;
   margin-top: 0.7rem;
   display: block;
@@ -909,46 +913,11 @@ body {
 }
 
 .header {
-  height: 95vh;
-  background-image: url("../img/real/image26.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-}
-@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-  .header {
-    background-image: url("../img/real/image26.jpg");
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  }
-}
-.header__logo-box {
-  line-height: 1.7;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-.header__logo {
-  height: 3.5rem;
-}
-.header__brand {
-  font-family: "Fraunces", cursive;
-  font-size: 4rem;
-  color: #53332e;
-}
-.header__subbrand {
-  font-family: "Montserrat", cursive;
-  font-size: 2rem;
-  letter-spacing: 1rem;
-  text-indent: 1rem;
-  color: #89533a;
-}
-.header__text-box {
-  text-align: right;
+  gap: 32px;
 }
 
 .row {
@@ -1133,20 +1102,20 @@ body {
 .navigation__nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  padding: 20px 50px;
 }
 .navigation__list {
   display: flex;
+  align-items: center;
   list-style: none;
   text-align: center;
 }
-.navigation__item {
-  margin: 1rem;
-}
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
+  font-family: Rosarivo sans-serif;
+  letter-spacing: 2.7px;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1rem 2rem;
   color: #53332e;
   text-decoration: none;
@@ -1201,6 +1170,25 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
+}
+.navigation__logo-box {
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation__brand {
+  font-family: "Fraunces", cursive;
+  font-size: 4rem;
+  color: #53332e;
+  line-height: 6rem;
+}
+.navigation__subbrand {
+  font-family: "Montserrat", cursive;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+  color: #89533a;
 }
 
 .popup {

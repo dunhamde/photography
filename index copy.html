@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Original font from Natours -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
     <!-- New font to test -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosarivo:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
@@ -21,9 +27,9 @@
 
   <body>
     <nav class="navigation__nav">
-      <div class="navigation__logo-box">
-        <p class="navigation__brand">FOTOCHIC</p>
-        <p class="navigation__subbrand">PHOTOGRAPHY</p>
+      <div class="header__logo-box">
+        <p class="header__brand">FOTOCHIC</p>
+        <p class="header__subbrand">PHOTOGRAPHY</p>
       </div>
 
       <ul class="navigation__list">
@@ -31,22 +37,17 @@
           <a href="#" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Portfolio</a>
+          <a href="#" class="navigation__link">About</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Pricing</a>
+          <a href="#" class="navigation__link">Investment</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">Contact</a>
         </li>
       </ul>
     </nav>
-    <header class="header">
-      <h2 class="heading-secondary">Warm & Timeless</h2>
-      <p class="description">
-        Portrait and event photographer based in Utah County
-      </p>
-    </header>
+    <header class="header"></header>
 
     <main>
       <section class="section-about">
@@ -490,5 +491,40 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero
+            volutpat sed cras ornare arcu dui vivamus. Maecenas volutpat blandit
+            aliquam etiam erat. A lacus vestibulum sed arcu. Nec feugiat nisl
+            pretium fusce id velit ut tortor pretium. Tincidunt arcu non sodales
+            neque sodales ut etiam sit amet. Lacinia quis vel eros donec ac odio
+            tempor orci. Et netus et malesuada fames ac turpis egestas maecenas
+            pharetra. Pulvinar sapien et ligula ullamcorper malesuada proin
+            libero nunc. Quam pellentesque nec nam aliquam sem et tortor. Sapien
+            et ligula ullamcorper malesuada. Accumsan in nisl nisi scelerisque.
+            Amet nulla facilisi morbi tempus iaculis. Amet aliquam id diam
+            maecenas ultricies mi eget. Morbi blandit cursus risus at ultrices
+            mi. Donec enim diam vulputate ut pharetra sit amet aliquam. Donec
+            adipiscing tristique risus nec. In fermentum et sollicitudin ac orci
+            phasellus egestas tellus rutrum.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
