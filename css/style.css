@@ -902,21 +902,31 @@ body {
   min-width: 500px;
   flex: 1;
 }
-.carousel__box:first-child {
+#box1 {
   background-color: green;
 }
-.carousel__box:nth-child(2) {
+#box2 {
   background-color: red;
 }
-.carousel__box:nth-child(3) {
+#box3 {
   background-color: yellow;
 }
-.carousel__box:nth-child(4) {
+#box4 {
   background-color: turquoise;
 }
-.carousel__box:nth-child(5) {
-  background-color: brown;
+/* .carousel__box:nth-child(5) {
+  background-color: green;
 }
+.carousel__box:nth-child(6) {
+  background-color: red;
+}
+.carousel__box:nth-child(7) {
+  background-color: yellow;
+}
+.carousel__box:nth-child(8) {
+  background-color: turquoise;
+} */
+
 
 .header {
   display: flex;
