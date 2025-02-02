@@ -83,9 +83,6 @@ body {
 .paragraph {
   font-size: variables.$default-font-size;
   font-family: Rosarivo, sans-serif;
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
 }
 
 .description {
@@ -95,6 +92,6 @@ body {
 }
 
 .horizontal-line {
-  padding: 20px 0;
+  // padding: 20px 0;
   border-bottom: 1px solid variables.$divider-color;
 }
