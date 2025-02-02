@@ -1,4 +1,5 @@
 @use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 .u-center-text {
   text-align: center !important;
@@ -30,4 +31,9 @@
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+.u-highlight-container {
+  padding: 1rem 0;
+  background-color: rgba(216, 177, 109, 0.4);
 }

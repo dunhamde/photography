@@ -58,49 +58,9 @@
   }
 }
 
-.book {
-  background-image: linear-gradient(
-      105deg,
-      rgba(variables.$color-white, 0.9) 0%,
-      rgba(variables.$color-white, 0.9) 50%,
-      transparent 50%
-    ),
-    url("../img/nat-10.jpg");
-  background-size: cover;
-  height: 50rem;
-  border-radius: variables.$border-radius-small;
-  box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.2);
-
-  @include mixins.respond(tab-land) {
-    background-image: linear-gradient(
-        105deg,
-        rgba(variables.$color-white, 0.9) 0%,
-        rgba(variables.$color-white, 0.9) 65%,
-        transparent 65%
-      ),
-      url("../img/nat-10.jpg");
-    background-size: cover;
-    height: auto;
-  }
-  @include mixins.respond(tab-port) {
-    background-image: linear-gradient(
-        to right,
-        rgba(variables.$color-white, 0.9) 0%,
-        rgba(variables.$color-white, 0.9) 100%
-      ),
-      url("../img/nat-10.jpg");
-    height: auto;
-  }
-
-  &__form {
-    width: 50%;
-    padding: 6rem;
-
-    @include mixins.respond(tab-land) {
-      width: 65%;
-    }
-    @include mixins.respond(tab-port) {
-      width: 100%;
-    }
+.section-sell {
+  padding-top: 2rem;
+  h2 {
+    margin-bottom: 3rem;
   }
 }

@@ -6,7 +6,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: variables.$color-grey-dark;
 }
@@ -17,15 +16,19 @@ body {
 
   &--main {
     display: block;
-    font-family: "Playwrite ID", cursive;
-
-    font-size: 6rem;
-    // margin-right: 2rem;
-    line-height: 2.7em;
+    text-align: center;
+    font-family:
+      Playfair Display,
+      sans-serif;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    line-height: normal;
     font-weight: 400;
     letter-spacing: 1rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
+    // animation-name: moveInLeft;
+    // animation-duration: 1s;
+    // -- maybe use this animation later/ for something else
+    color: variables.$color-brand;
 
     @include mixins.respond(phone) {
       letter-spacing: 1rem;
@@ -36,7 +39,6 @@ body {
   &--sub {
     display: block;
     font-size: 2rem;
-    // font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
 
@@ -59,17 +61,6 @@ body {
   transition: all 0.2s;
   color: variables.$color-brand;
 
-  // @supports (-webkit-background-clip: text) or (background-clip: text) {
-  //   background-image: linear-gradient(
-  //     to right,
-  //     variables.$color-primary-light,
-  //     variables.$color-primary-dark
-  //   );
-  //   -webkit-background-clip: text;
-  //   background-clip: text;
-  //   color: transparent;
-  // }
-
   @include mixins.respond(tab-port) {
     font-size: 3rem;
   }
@@ -81,13 +72,17 @@ body {
 
 .heading-tertiary {
   font-size: variables.$default-font-size;
-  // font-weight: 700;
-  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2rem;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: variables.$color-brand;
 }
 
 .paragraph {
   font-size: variables.$default-font-size;
-
+  font-family: Rosarivo, sans-serif;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -97,4 +92,9 @@ body {
   font-size: 1.5em;
   font-family: Rosarivo, sans-serif;
   color: variables.$color-black;
+}
+
+.horizontal-line {
+  padding: 20px 0;
+  border-bottom: 1px solid variables.$divider-color;
 }

@@ -95,7 +95,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
 }
@@ -106,13 +105,14 @@ body {
 }
 .heading-primary--main {
   display: block;
-  font-family: "Playwrite ID", cursive;
-  font-size: 6rem;
-  line-height: 2.7em;
+  text-align: center;
+  font-family: Playfair Display, sans-serif;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  line-height: normal;
   font-weight: 400;
   letter-spacing: 1rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
+  color: #53332e;
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
@@ -156,11 +156,17 @@ body {
 
 .heading-tertiary {
   font-size: 1.6rem;
-  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2rem;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #53332e;
 }
 
 .paragraph {
   font-size: 1.6rem;
+  font-family: Rosarivo, sans-serif;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
@@ -170,6 +176,11 @@ body {
   font-size: 1.5em;
   font-family: Rosarivo, sans-serif;
   color: #000;
+}
+
+.horizontal-line {
+  padding: 20px 0;
+  border-bottom: 1px solid #d8b06d;
 }
 
 .u-center-text {
@@ -204,6 +215,11 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+.u-highlight-container {
+  padding: 1rem 0;
+  background-color: rgba(216, 177, 109, 0.4);
 }
 
 .section-about {
@@ -263,39 +279,11 @@ body {
   }
 }
 
-.book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg");
-  background-size: cover;
-  height: 50rem;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+.section-sell {
+  padding-top: 2rem;
 }
-@media only screen and (max-width: 75em) {
-  .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../img/nat-10.jpg");
-    background-size: cover;
-    height: auto;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../img/nat-10.jpg");
-    height: auto;
-  }
-}
-.book__form {
-  width: 50%;
-  padding: 6rem;
-}
-@media only screen and (max-width: 75em) {
-  .book__form {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book__form {
-    width: 100%;
-  }
+.section-sell h2 {
+  margin-bottom: 3rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -941,10 +929,6 @@ body {
   height: 500px;
   width: 500px;
   display: inline-flex;
-}
-.carousel .horizontal-line {
-  padding: 20px 0;
-  border-bottom: 1px solid #d8b06d;
 }
 
 .header {
