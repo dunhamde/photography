@@ -285,6 +285,14 @@ body {
 .section-sell h2 {
   margin-bottom: 3rem;
 }
+.section-sell h2,
+.section-sell h3 {
+  width: 80vw;
+}
+.section-sell p {
+  margin-right: 0 auto;
+  text-align: center;
+}
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

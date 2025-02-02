@@ -63,4 +63,13 @@
   h2 {
     margin-bottom: 3rem;
   }
+  h2,
+  h3 {
+    width: 80vw;
+  }
+  p {
+    // width: 90vw;
+    margin-right: 0 auto;
+    text-align: center;
+  }
 }
