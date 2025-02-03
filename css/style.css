@@ -183,6 +183,10 @@ body {
   text-align: center !important;
 }
 
+.u-center-block {
+  margin: 0 auto;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
@@ -205,6 +209,10 @@ body {
   margin-bottom: 1.5rem !important;
 }
 
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important;
+}
+
 .u-margin-top-big {
   margin-top: 8rem !important;
 }
@@ -218,44 +226,18 @@ body {
   background-color: rgba(216, 177, 109, 0.4);
 }
 
-.section-features {
-  padding: 20rem 0;
-  background-image: url("../img/real/Gradient1.jpg");
-  background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem;
-}
-.section-features > * {
-  transform: skewY(7deg);
-}
-@media only screen and (max-width: 56.25em) {
-  .section-features {
-    padding: 10rem 0;
-  }
+.u-flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-sell {
   padding-top: 2rem;
 }
-.section-sell div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.section-sell h2 {
-  margin-bottom: 3rem;
-}
-.section-sell h2,
-.section-sell h3 {
-  width: 65vw;
-  text-align: center;
-}
 .section-sell p {
-  margin: 0 auto;
   word-wrap: break-word;
   width: 55%;
-  padding-top: 1rem;
 }
 .section-sell a {
   margin: 0 auto;

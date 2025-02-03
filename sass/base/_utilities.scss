@@ -5,6 +5,10 @@
   text-align: center !important;
 }
 
+.u-center-block {
+  margin: 0 auto;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 
@@ -25,6 +29,10 @@
   margin-bottom: 1.5rem !important;
 }
 
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important;
+}
+
 .u-margin-top-big {
   margin-top: 8rem !important;
 }
@@ -36,4 +44,10 @@
 .u-highlight-container {
   padding: 1rem 0;
   background-color: rgba(216, 177, 109, 0.4); // transparent brand background
+}
+
+.u-flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
