@@ -294,6 +294,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.section-meet a {
+  margin-top: 1.5rem;
+  display: block;
+}
 
 .section-recent-sessions {
   display: flex;
