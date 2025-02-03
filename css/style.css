@@ -268,11 +268,11 @@ body {
   gap: 4rem;
   padding: 10rem 0;
 }
-.section__meet {
+.section__double-col {
   flex-direction: row;
   padding: 10rem 0;
 }
-.section__meet a {
+.section__double-col a {
   margin-top: 1.5rem;
   display: block;
 }
@@ -290,7 +290,6 @@ body {
 }
 
 .background-container {
-  width: 1000px;
   height: 640px;
   padding: 17rem;
   background-image: url("../img/real/family1.jpg");
