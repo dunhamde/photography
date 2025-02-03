@@ -312,6 +312,29 @@ body {
   margin: 0 auto;
 }
 
+.section-testimonials {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-container {
+  width: 1000px;
+  height: 640px;
+  padding: 20rem;
+  background-image: url("../img/real/family1.jpg");
+  background-size: cover;
+}
+.background-container div {
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
 .btn-link {
   font-family: Rosarivo, sans-serif;
   font-size: 1.5rem;
