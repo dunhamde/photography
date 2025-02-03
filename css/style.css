@@ -263,6 +263,13 @@ body {
   padding: 3rem 0;
 }
 
+.section-portfolio {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 10rem 0;
+}
+
 .btn-link {
   font-family: Rosarivo, sans-serif;
   font-size: 1.5rem;
@@ -472,6 +479,19 @@ body {
   height: 500px;
   width: 500px;
   display: inline-flex;
+}
+
+.portfolio-item {
+  width: 305px;
+  text-align: center;
+}
+.portfolio-item h2 {
+  margin-top: 1rem;
+}
+.portfolio-image {
+  height: 410px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .header {

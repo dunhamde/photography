@@ -1,0 +1,15 @@
+.portfolio {
+  &-item {
+    width: 305px;
+    text-align: center;
+    h2 {
+      margin-top: 1rem;
+    }
+  }
+
+  &-image {
+    height: 410px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
