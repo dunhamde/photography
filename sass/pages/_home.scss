@@ -37,7 +37,7 @@
   p {
     margin: 0 auto;
     word-wrap: break-word;
-    width: 80%;
+    width: 55%;
     padding-top: 1rem;
   }
   a {
@@ -52,4 +52,30 @@
   gap: 4rem;
   justify-content: center;
   padding: 10rem 0;
+}
+
+.section-meet {
+  display: flex;
+  padding: 10rem 0;
+  margin: 0 15%;
+  align-items: center;
+  justify-content: center;
+  > * {
+    flex: 1 40%;
+  }
+
+  img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+  }
+  .meet-details {
+    margin: 4rem;
+  }
+  p:nth-child(2) {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
 }
