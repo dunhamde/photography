@@ -119,3 +119,14 @@
     gap: 2rem;
   }
 }
+
+.section-socials {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+  a {
+    font-family: Rosarivo, sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+}

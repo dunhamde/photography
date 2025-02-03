@@ -335,6 +335,17 @@ body {
   gap: 2rem;
 }
 
+.section-socials {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+.section-socials a {
+  font-family: Rosarivo, sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
 .btn-link {
   font-family: Rosarivo, sans-serif;
   font-size: 1.5rem;
