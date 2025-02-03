@@ -83,12 +83,20 @@ body {
 .paragraph {
   font-size: variables.$default-font-size;
   font-family: Rosarivo, sans-serif;
+  word-wrap: break-word;
 }
 
 .description {
   font-size: 1.5em;
   font-family: Rosarivo, sans-serif;
   color: variables.$color-black;
+}
+
+.sub-heading {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .horizontal-line {

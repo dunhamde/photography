@@ -167,12 +167,20 @@ body {
 .paragraph {
   font-size: 1.6rem;
   font-family: Rosarivo, sans-serif;
+  word-wrap: break-word;
 }
 
 .description {
   font-size: 1.5em;
   font-family: Rosarivo, sans-serif;
   color: #000;
+}
+
+.sub-heading {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .horizontal-line {
@@ -185,6 +193,11 @@ body {
 
 .u-center-block {
   margin: 0 auto;
+  display: block;
+}
+
+.u-margin-medium {
+  margin: 4rem;
 }
 
 .u-margin-bottom-big {
@@ -223,6 +236,7 @@ body {
 
 .u-highlight-container {
   padding: 1rem 0;
+  width: 100%;
   background-color: rgba(216, 177, 109, 0.4);
 }
 
@@ -232,51 +246,33 @@ body {
   align-items: center;
 }
 
-.section-sell {
-  padding-top: 2rem;
-}
-.section-sell p {
-  word-wrap: break-word;
-  width: 55%;
-}
-.section-sell a {
+.section {
   margin: 0 auto;
-  display: block;
-  padding: 3rem 0;
-}
-
-.section-portfolio {
   display: flex;
-  gap: 4rem;
-  justify-content: center;
-  padding: 10rem 0;
-}
-
-.section-meet {
-  display: flex;
-  padding: 10rem 0;
-  margin: 0 15%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-meet > * {
-  flex: 1 40%;
+.section__content {
+  width: 1000px;
+  margin: 0 auto;
 }
-.section-meet img {
-  object-fit: cover;
-  height: 500px;
-  width: 500px;
+.section__sell {
+  padding-top: 2rem;
 }
-.section-meet .meet-details {
-  margin: 4rem;
+.section__sell a {
+  padding: 3rem 0;
 }
-.section-meet p:nth-child(2) {
-  font-family: Poppins, sans-serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+.section__portfolio {
+  flex-direction: row;
+  gap: 4rem;
+  padding: 10rem 0;
 }
-.section-meet a {
+.section__meet {
+  flex-direction: row;
+  padding: 10rem 0;
+}
+.section__meet a {
   margin-top: 1.5rem;
   display: block;
 }
@@ -326,6 +322,12 @@ body {
   font-family: Rosarivo, sans-serif;
   font-size: 2rem;
   text-decoration: underline;
+}
+
+.section-image {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
 }
 
 .btn-link {

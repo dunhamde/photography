@@ -7,6 +7,11 @@
 
 .u-center-block {
   margin: 0 auto;
+  display: block;
+}
+
+.u-margin-medium {
+  margin: 4rem;
 }
 
 .u-margin-bottom-big {
@@ -43,6 +48,7 @@
 
 .u-highlight-container {
   padding: 1rem 0;
+  width: 100%;
   background-color: rgba(216, 177, 109, 0.4); // transparent brand background
 }
 

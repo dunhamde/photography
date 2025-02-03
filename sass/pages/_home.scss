@@ -1,54 +1,40 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.section-sell {
-  padding-top: 2rem;
-
-  p {
-    word-wrap: break-word;
-    width: 55%;
-  }
-  a {
-    margin: 0 auto;
-    display: block;
-    padding: 3rem 0;
-  }
-}
-
-.section-portfolio {
+.section {
+  margin: 0 auto;
   display: flex;
-  gap: 4rem;
-  justify-content: center;
-  padding: 10rem 0;
-}
-
-.section-meet {
-  display: flex;
-  padding: 10rem 0;
-  margin: 0 15%;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  > * {
-    flex: 1 40%;
+
+  &__content {
+    width: 1000px;
+    margin: 0 auto;
   }
 
-  img {
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
+  &__sell {
+    padding-top: 2rem;
+
+    a {
+      padding: 3rem 0;
+    }
   }
-  .meet-details {
-    margin: 4rem;
+
+  &__portfolio {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 10rem 0;
   }
-  p:nth-child(2) {
-    font-family: Poppins, sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  a {
-    margin-top: 1.5rem;
-    display: block;
+
+  &__meet {
+    flex-direction: row;
+    padding: 10rem 0;
+
+    a {
+      margin-top: 1.5rem;
+      display: block;
+    }
   }
 }
 
