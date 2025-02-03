@@ -1,15 +1,6 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.section-about {
-  padding: 25rem 0;
-  margin-top: -20vh;
-
-  @include mixins.respond(tab-port) {
-    padding: 20rem 0;
-  }
-}
-
 .section-features {
   padding: 20rem 0;
   background-image: url("../img/real/Gradient1.jpg");
@@ -20,38 +11,6 @@
   & > * {
     transform: skewY(7deg);
   }
-
-  @include mixins.respond(tab-port) {
-    padding: 10rem 0;
-  }
-}
-
-.section-price-list {
-  background-color: variables.$color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
-
-  @include mixins.respond(tab-port) {
-    padding: 20rem 0 10rem 0;
-  }
-}
-
-.section-stories {
-  padding: 15rem 0;
-  position: relative;
-
-  @include mixins.respond(tab-port) {
-    padding: 10rem 0;
-  }
-}
-
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    variables.$color-gradient-start 15%,
-    variables.$color-gradient-end
-  );
 
   @include mixins.respond(tab-port) {
     padding: 10rem 0;
