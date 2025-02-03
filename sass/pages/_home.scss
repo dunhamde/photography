@@ -36,26 +36,20 @@
       display: block;
     }
   }
-}
 
-.section-recent-sessions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
-  background-image: url("../img/real/Gradient1.jpg");
-  h2 {
-    padding: 1.5rem 2rem;
-    background-color: white;
-    margin: 0 auto;
+  &__recent-sessions {
+    height: 600px;
+    background-image: url("../img/real/Gradient1.jpg");
+    h2 {
+      padding: 1.5rem 2rem;
+      background-color: white;
+      margin: 0 auto;
+    }
   }
-}
 
-.section-testimonials {
-  margin-top: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &__testimonials {
+    margin-top: 10rem;
+  }
 }
 
 .background-container {

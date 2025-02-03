@@ -276,25 +276,17 @@ body {
   margin-top: 1.5rem;
   display: block;
 }
-
-.section-recent-sessions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.section__recent-sessions {
   height: 600px;
   background-image: url("../img/real/Gradient1.jpg");
 }
-.section-recent-sessions h2 {
+.section__recent-sessions h2 {
   padding: 1.5rem 2rem;
   background-color: white;
   margin: 0 auto;
 }
-
-.section-testimonials {
+.section__testimonials {
   margin-top: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .background-container {
