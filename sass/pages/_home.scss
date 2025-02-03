@@ -79,3 +79,16 @@
     letter-spacing: 4px;
   }
 }
+
+.section-recent-sessions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-image: url("../img/real/Gradient1.jpg");
+  h2 {
+    padding: 1.5rem 2rem;
+    background-color: white;
+    margin: 0 auto;
+  }
+}
