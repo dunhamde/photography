@@ -49,6 +49,16 @@
 
   &__testimonials {
     margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  &__socials {
+    margin: 5rem 0;
+    a {
+      font-family: Rosarivo, sans-serif;
+      font-size: 2rem;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -64,16 +74,5 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
-}
-
-.section-socials {
-  display: flex;
-  flex-direction: column;
-  margin: 5rem 0;
-  a {
-    font-family: Rosarivo, sans-serif;
-    font-size: 2rem;
-    text-decoration: underline;
   }
 }

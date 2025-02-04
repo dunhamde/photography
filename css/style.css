@@ -287,6 +287,15 @@ body {
 }
 .section__testimonials {
   margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+.section__socials {
+  margin: 5rem 0;
+}
+.section__socials a {
+  font-family: Rosarivo, sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
 .background-container {
@@ -302,17 +311,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-}
-
-.section-socials {
-  display: flex;
-  flex-direction: column;
-  margin: 5rem 0;
-}
-.section-socials a {
-  font-family: Rosarivo, sans-serif;
-  font-size: 2rem;
-  text-decoration: underline;
 }
 
 .section-image {
