@@ -1,79 +1,49 @@
 @use "../abstracts/variables";
-.carousel {
-  display: flex;
 
-  &__prev {
-    position: absolute;
-    left: 0;
-    align-self: center;
-  }
-  &__next {
-    position: absolute;
-    right: 0;
-    align-self: center;
-  }
+:root {
+  --no-of-slides: 4;
+  --slides-in-view: 4;
+  --slide-width: 500px;
+  --slide-height: 750px;
+  --iteration-time: 10s;
+}
+#box1 {
+  background-image: url("../../img/real/image5.jpg");
+  background-size: cover;
+}
+#box2 {
+  background-image: url("../../img/real/image20.jpg");
+  background-size: cover;
+}
+#box3 {
+  background-image: url("../../img/real/image19.jpg");
+  background-size: cover;
+}
+#box4 {
+  background-image: url("../../img/real/image22.jpg");
+  background-size: cover;
+}
 
-  &__items {
-    display: flex;
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  &__items::-webkit-scrollbar {
-    display: none;
+  100% {
+    transform: translateX(calc(var(--slide-width) * var(--no-of-slides) * -1));
   }
+}
 
-  :root {
-    --no-of-slides: 4;
-    --slides-in-view: 4;
-    --slide-width: 500px;
-    --slide-height: 500px;
-    --iteration-time: 10s;
-  }
-
-  &__box {
-    scroll-snap-align: center;
-    height: var(--slide-height);
-    min-width: var(--slide-width);
-    flex: 1;
-  }
-  #box1 {
-    background-color: green;
-  }
-  #box2 {
-    background-color: red;
-  }
-  #box3 {
-    background-color: yellow;
-  }
-  #box4 {
-    background-color: turquoise;
-  }
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(
-        calc(var(--slide-width) * var(--no-of-slides) * -1)
-      );
-    }
-  }
-
-  .logos {
-    /* overflow: hidden; */
-    white-space: nowrap;
-  }
-  .logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-  }
-  .logos-slide div {
-    height: 500px;
-    width: 500px;
-    display: inline-flex;
-  }
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 17s slide infinite linear;
+}
+.logos-slide div {
+  height: var(--slide-height);
+  width: var(--slide-width);
+  display: inline-flex;
 }
