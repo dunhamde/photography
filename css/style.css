@@ -511,6 +511,10 @@ body {
   display: inline-flex;
 }
 
+.gallery-slide-paused {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+
 .portfolio-item {
   width: 305px;
   text-align: center;

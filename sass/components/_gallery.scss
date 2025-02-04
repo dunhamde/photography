@@ -48,3 +48,7 @@
     display: inline-flex;
   }
 }
+
+.gallery-slide-paused {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
