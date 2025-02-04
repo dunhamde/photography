@@ -33,17 +33,18 @@
   }
 }
 
-.logos {
+.gallery {
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 1rem;
 }
-.logos-slide {
+.gallery-slide {
   display: inline-block;
   animation: 17s slide infinite linear;
-}
-.logos-slide div {
-  height: var(--slide-height);
-  width: var(--slide-width);
-  display: inline-flex;
+
+  &__image {
+    height: var(--slide-height);
+    width: var(--slide-width);
+    display: inline-flex;
+  }
 }

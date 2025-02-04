@@ -495,18 +495,17 @@ body {
     transform: translateX(calc(var(--slide-width) * var(--no-of-slides) * -1));
   }
 }
-.logos {
+.gallery {
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 1rem;
 }
 
-.logos-slide {
+.gallery-slide {
   display: inline-block;
   animation: 17s slide infinite linear;
 }
-
-.logos-slide div {
+.gallery-slide__image {
   height: var(--slide-height);
   width: var(--slide-width);
   display: inline-flex;
