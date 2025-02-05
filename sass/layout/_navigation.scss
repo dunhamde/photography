@@ -37,6 +37,13 @@
 
   &__item {
   }
+  &__button {
+    // height: 7rem;
+    // width: 7rem;
+    // position: fixed;
+    z-index: 2000;
+    // cursor: pointer;
+  }
 
   &__link {
     &:link,
@@ -58,12 +65,29 @@
     }
   }
 
+  &__mobile-nav {
+    background-color: variables.$color-background-2;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
   // FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav {
+  &__checkbox:checked ~ &__mobile-nav {
     opacity: 1;
     width: 100%;
   }

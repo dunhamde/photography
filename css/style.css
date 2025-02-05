@@ -701,6 +701,9 @@ body {
     text-align: center;
   }
 }
+.navigation__button {
+  z-index: 2000;
+}
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-family: Rosarivo sans-serif;
@@ -716,10 +719,24 @@ body {
   display: inline-block;
   margin-right: 1.5rem;
 }
+.navigation__mobile-nav {
+  background-color: #fbf4ec;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navigation__checkbox {
+  display: none;
+}
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
 }
-.navigation__checkbox:checked ~ .navigation__nav {
+.navigation__checkbox:checked ~ .navigation__mobile-nav {
   opacity: 1;
   width: 100%;
 }
