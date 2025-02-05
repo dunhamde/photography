@@ -49,8 +49,13 @@ body {
   }
 }
 
+.container {
+  overflow-x: hidden;
+  position: relative;
+}
+
 ::selection {
-  background-color: #55c57a;
+  background-color: #d8b06d;
   color: #fff;
 }
 

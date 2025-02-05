@@ -32,7 +32,12 @@ body {
   }
 }
 
+.container {
+  overflow-x: hidden;
+  position: relative;
+}
+
 ::selection {
-  background-color: variables.$color-primary;
+  background-color: variables.$divider-color;
   color: variables.$color-white;
 }
