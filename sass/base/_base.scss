@@ -10,7 +10,7 @@
 }
 
 html {
-  // This defines what 1rem is
+  // This defines what 1rem is -> 10px
   font-size: 62.5%;
 
   @include mixins.respond(tab-land) {
