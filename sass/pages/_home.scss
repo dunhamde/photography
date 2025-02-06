@@ -19,12 +19,25 @@
     a {
       padding: 3rem 0;
     }
+    @include mixins.respond(phone2) {
+      p {
+        padding: 0 1rem;
+      }
+    }
   }
 
   &__portfolio {
     flex-direction: row;
     gap: 4rem;
     padding: 10rem 0;
+
+    @include mixins.respond(tab2) {
+      padding: 10rem 1rem;
+    }
+
+    @include mixins.respond(phone2) {
+      flex-direction: column;
+    }
   }
 
   &__double-col {

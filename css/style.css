@@ -268,10 +268,25 @@ body {
 .section__sell a {
   padding: 3rem 0;
 }
+@media only screen and (max-width: 50em) {
+  .section__sell p {
+    padding: 0 1rem;
+  }
+}
 .section__portfolio {
   flex-direction: row;
   gap: 4rem;
   padding: 10rem 0;
+}
+@media only screen and (max-width: 62.5em) {
+  .section__portfolio {
+    padding: 10rem 1rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .section__portfolio {
+    flex-direction: column;
+  }
 }
 .section__double-col {
   flex-direction: row;
@@ -334,15 +349,15 @@ body {
   object-fit: cover;
   aspect-ratio: 1/1;
 }
+@media only screen and (max-width: 62.5em) {
+  .section-image {
+    margin: 1rem;
+  }
+}
 @media only screen and (max-width: 50em) {
   .section-image {
     width: 100%;
     padding: 0 1rem;
-  }
-}
-@media only screen and (max-width: 62.5em) {
-  .section-image {
-    margin: 1rem;
   }
 }
 
@@ -549,10 +564,22 @@ body {
 .portfolio-item h2 {
   margin-top: 1rem;
 }
+@media only screen and (max-width: 50em) {
+  .portfolio-item {
+    width: auto;
+    padding: 0 1rem;
+  }
+}
 .portfolio-image {
   height: 410px;
   width: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 50em) {
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .header {
