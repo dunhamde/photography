@@ -1,6 +1,16 @@
+@use "../abstracts/mixins";
+
 .section-image {
   width: 50%;
   object-fit: cover;
   aspect-ratio: 1 / 1;
-  margin: 1rem;
+
+  @include mixins.respond(phone2) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  @include mixins.respond(tab2) {
+    margin: 1rem;
+  }
 }

@@ -35,6 +35,16 @@
       margin-top: 1.5rem;
       display: block;
     }
+
+    @include mixins.respond(phone2) {
+      flex-direction: column;
+      .section-image {
+        order: 1;
+      }
+      div {
+        order: 2;
+      }
+    }
   }
 
   &__recent-sessions {
