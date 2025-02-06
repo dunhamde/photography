@@ -68,6 +68,9 @@
         margin-right: 1.5rem;
       }
     }
+    &:hover {
+      color: variables.$color-tan;
+    }
   }
 
   &__mobile-nav {

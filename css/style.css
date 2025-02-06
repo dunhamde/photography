@@ -390,6 +390,9 @@ body {
   color: #53332e;
   letter-spacing: 1.4px;
 }
+.btn-link:hover {
+  color: #d9bca3;
+}
 
 .card {
   perspective: 150rem;
@@ -795,6 +798,9 @@ body {
 .navigation__link:link span, .navigation__link:visited span {
   display: inline-block;
   margin-right: 1.5rem;
+}
+.navigation__link:hover {
+  color: #d9bca3;
 }
 .navigation__mobile-nav {
   background-color: #fbf4ec;

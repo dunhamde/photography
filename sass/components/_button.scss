@@ -6,4 +6,7 @@
   text-decoration: none;
   color: variables.$color-brand;
   letter-spacing: 1.4px;
+  &:hover {
+    color: variables.$color-tan;
+  }
 }
