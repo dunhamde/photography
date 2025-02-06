@@ -320,6 +320,27 @@ body {
   margin-top: 10rem;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 50em) {
+  .section__testimonials {
+    display: none;
+  }
+}
+.section__mobile-test {
+  display: none;
+}
+@media only screen and (max-width: 50em) {
+  .section__mobile-test {
+    display: flex;
+  }
+}
+.section__mobile-test div {
+  text-align: center;
+  width: 60%;
+}
+.section__mobile-test h2 {
+  margin-bottom: 3rem;
+  transform: translateX(-20px);
+}
 .section__socials {
   margin: 5rem 0;
 }
@@ -335,7 +356,8 @@ body {
   background-image: url("../img/real/family1.jpg");
   background-size: cover;
 }
-.background-container div {
+
+.testimonial-box {
   background-color: white;
   padding: 3rem;
   display: flex;
