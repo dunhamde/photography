@@ -339,7 +339,6 @@ body {
 }
 .section__mobile-test h2 {
   margin-bottom: 3rem;
-  transform: translateX(-20px);
 }
 .section__socials {
   margin: 5rem 0;
