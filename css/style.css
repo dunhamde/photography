@@ -259,7 +259,7 @@ body {
   justify-content: center;
 }
 .section__content {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .section__sell {
@@ -319,9 +319,10 @@ body {
 }
 
 .section-image {
+  width: 50%;
   object-fit: cover;
-  height: 500px;
-  width: 500px;
+  aspect-ratio: 1/1;
+  margin: 1rem;
 }
 
 .btn-link {
@@ -679,6 +680,11 @@ body {
   background-color: #fbf4ec;
   justify-content: space-between;
   padding: 20px 50px;
+}
+@media only screen and (max-width: 62.5em) {
+  .navigation__nav {
+    padding: 10px 30px;
+  }
 }
 .navigation__list {
   display: flex;
