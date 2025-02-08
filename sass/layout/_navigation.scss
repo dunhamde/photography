@@ -43,11 +43,7 @@
   &__item {
   }
   &__button {
-    // height: 7rem;
-    // width: 7rem;
-    // position: fixed;
     z-index: 2000;
-    // cursor: pointer;
   }
 
   &__link {
@@ -176,6 +172,15 @@
     font-size: 4rem;
     color: variables.$color-brand;
     line-height: 6rem;
+
+    @include mixins.respond(tab2) {
+      font-size: 3.6rem;
+      line-height: 5.4rem;
+    }
+    @include mixins.respond(phone2) {
+      font-size: 3.24rem;
+      line-height: 4.32rem;
+    }
   }
 
   &__subbrand {
@@ -184,5 +189,16 @@
     letter-spacing: 1rem;
     text-indent: 1rem;
     color: variables.$color-wood;
+
+    @include mixins.respond(tab2) {
+      font-size: 1.8rem;
+      letter-spacing: 0.9rem;
+      text-indent: 0.9rem;
+    }
+    @include mixins.respond(phone2) {
+      font-size: 1.62rem;
+      letter-spacing: 0.81rem;
+      text-indent: 0.81rem;
+    }
   }
 }
