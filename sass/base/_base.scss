@@ -13,23 +13,23 @@ html {
   // This defines what 1rem is -> 10px
   font-size: 62.5%;
 
-  @include mixins.respond(tab-land) {
-    font-size: 56.25%;
-  }
-  @include mixins.respond(tab-port) {
-    font-size: 50%;
-  }
-  @include mixins.respond(big-desktop) {
-    font-size: 75%;
-  }
+  // @include mixins.respond(tab-land) {
+  //   font-size: 56.25%;
+  // }
+  // @include mixins.respond(tab-port) {
+  //   font-size: 50%;
+  // }
+  // @include mixins.respond(big-desktop) {
+  //   font-size: 75%;
+  // }
 }
 
 body {
   box-sizing: border-box;
   background-color: variables.$color-background-2;
-  @include mixins.respond(tab-port) {
-    padding: 0;
-  }
+  // @include mixins.respond(tab-port) {
+  //   padding: 0;
+  // }
 }
 
 .container {

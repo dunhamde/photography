@@ -23,30 +23,10 @@ $breakpoint argument choices:
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  html {
-    font-size: 50%;
-  }
-}
-@media only screen and (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }
-}
 
 body {
   box-sizing: border-box;
   background-color: #fbf4ec;
-}
-@media only screen and (max-width: 56.25em) {
-  body {
-    padding: 0;
-  }
 }
 
 .container {
@@ -119,10 +99,10 @@ body {
   letter-spacing: 1rem;
   color: #53332e;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 62.5em) {
   .heading-primary--main {
-    letter-spacing: 1rem;
-    font-size: 5rem;
+    letter-spacing: 0.9rem;
+    font-size: 4.5rem;
   }
 }
 .heading-primary--sub {
@@ -148,14 +128,10 @@ body {
   transition: all 0.2s;
   color: #53332e;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 62.5em) {
   .heading-secondary {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-secondary {
-    font-size: 2.5rem;
+    font-size: 3.15rem;
+    letter-spacing: 2.97px;
   }
 }
 
@@ -167,6 +143,12 @@ body {
   text-align: center;
   font-weight: 400;
   color: #53332e;
+}
+@media only screen and (max-width: 62.5em) {
+  .heading-tertiary {
+    font-size: 1.8rem;
+    letter-spacing: 5.4px;
+  }
 }
 
 .paragraph {
@@ -613,6 +595,12 @@ body {
   align-items: center;
   gap: 32px;
   padding-bottom: 2rem;
+  margin-top: 134px;
+}
+@media only screen and (max-width: 62.5em) {
+  .header {
+    margin-top: 114px;
+  }
 }
 
 .row {

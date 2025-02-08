@@ -8,4 +8,9 @@
   align-items: center;
   gap: 32px;
   padding-bottom: 2rem;
+  margin-top: 134px;
+
+  @include mixins.respond(tab2) {
+    margin-top: 114px;
+  }
 }
