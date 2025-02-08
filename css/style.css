@@ -589,6 +589,10 @@ body {
   height: 410px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.2s; /* Animation */
+}
+.portfolio-image:hover {
+  transform: scale(1.05); /* Scale up on hover */
 }
 @media only screen and (max-width: 50em) {
   .portfolio-image {
