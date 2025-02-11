@@ -373,6 +373,11 @@ body {
   }
 }
 
+.portfolio-svg {
+  margin-top: 5rem;
+  width: 200px;
+}
+
 .btn-link {
   font-family: Rosarivo, sans-serif;
   font-size: 1.5rem;
@@ -615,6 +620,10 @@ body {
   .header {
     margin-top: 114px;
   }
+}
+.header__portfolio {
+  margin-top: 20rem;
+  text-align: center;
 }
 
 .row {

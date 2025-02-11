@@ -14,4 +14,9 @@
   @include mixins.respond(tab2) {
     margin-top: 114px;
   }
+
+  &__portfolio {
+    margin-top: 20rem;
+    text-align: center;
+  }
 }
