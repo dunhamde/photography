@@ -606,6 +606,17 @@ body {
   }
 }
 
+.portfolio-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-grid img {
+  object-fit: cover;
+  width: 33vw;
+  height: 45vw;
+}
+
 .header {
   display: flex;
   justify-content: center;

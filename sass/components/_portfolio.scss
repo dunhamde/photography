@@ -29,3 +29,14 @@
     }
   }
 }
+
+.portfolio-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  img {
+    object-fit: cover;
+    width: 33vw;
+    height: 45vw;
+  }
+}
