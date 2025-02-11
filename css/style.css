@@ -617,6 +617,35 @@ body {
   height: 45vw;
 }
 
+.pricing__image {
+  height: 410px;
+  width: 100%;
+  object-fit: cover;
+}
+.pricing__details {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+.pricing__duration {
+  font-family: Playfair Display, serif;
+  color: #bf8e56;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.pricing__detail-item {
+  font-family: Rosarivo sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  padding: 0.5rem;
+  color: #53332e;
+  text-decoration: none;
+}
+.pricing__heading {
+  color: #bf8e56;
+  font-size: 3rem;
+}
+
 .header {
   display: flex;
   justify-content: center;

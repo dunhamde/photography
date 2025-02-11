@@ -1,0 +1,45 @@
+@use "../abstracts/variables";
+.pricing {
+  &__image {
+    height: 410px;
+    width: 100%;
+    object-fit: cover;
+
+    // @include mixins.respond(phone2) {
+    //   width: 100%;
+    //   height: auto;
+    // }
+  }
+
+  &__details {
+    // border-left: 2px solid variables.$color-gradient-end;
+    // border-right: 2px solid variables.$color-gradient-end;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+  &__duration {
+    font-family:
+      Playfair Display,
+      serif;
+    color: variables.$color-gradient-end;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  &__detail-item {
+    // display: inline-block;
+    font-family: Rosarivo sans-serif;
+    // letter-spacing: 2.7px;
+    font-size: 1.7em;
+    font-weight: 400;
+    padding: 0.5rem;
+    color: variables.$color-brand;
+    text-decoration: none;
+    // text-transform: uppercase;
+  }
+  &__heading {
+    color: variables.$color-gradient-end;
+    font-size: 3rem;
+  }
+}
