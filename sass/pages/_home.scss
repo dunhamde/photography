@@ -40,6 +40,12 @@
     }
   }
 
+  &__pricing {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid variables.$divider-color;
+  }
+
   &__double-col {
     flex-direction: row;
     padding: 10rem 0;
